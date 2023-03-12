@@ -1,0 +1,184 @@
+:root {
+    --primaryColor: #1c2023;
+    --secondaryColor: #ba970c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    background: rgb(1, 17, 4);
+    margin: auto;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background:rgb(1, 17, 4);
+    border: 2px solid rgb(255, 251, 8);
+}
+#container .navbar .logo{
+    font-size: 50px;
+    color: #efefef;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+#container .navbar .logo span{
+    color: #ffcc00;
+}
+#container .navbar ul{
+    float: right;
+    margin-right: 20px;
+
+}
+#container .navbar ul li{
+    line-height: 80px;
+    display: inline-block;
+    margin: 0 3px;
+    
+}
+#container .navbar ul li a {
+    color: #efefef;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#container .navbar ul li a.active, #container .navbar ul li a:hover{
+    color: darkorange;
+}
+/* heading */
+#container .heading{
+    height: 100px;
+    width: 100%;
+    border: 2px solid rgb(255, 251, 8);
+    font-size: 1rem;
+    background: rgb(1, 17, 4);
+
+}
+#container .heading #inputtype{
+    height: 30px;
+    width: 90%;
+    line-height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 65px;
+    border: 2px solid rgb(185, 8, 8);
+}
+#container .heading h2 {
+    display: flex;
+    color: #efefef;
+    height: 50px;
+    width: 100%;
+    background: rgb(1, 17, 4);
+    align-items: center;
+    justify-content: center;
+}
+
+.tittle{
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 251, 8);
+}
+#container .postbox{
+    height: auto;
+    background:  rgb(30, 12, 12);
+    border: 2px solid rgb(255, 251, 8);
+    width: 100%;
+    display: grid; 
+    padding: 20px 87px;
+    grid-template-columns: repeat(5, 200px); grid-gap: 40px;
+}
+
+#container .postbox .postcards {
+    width: 200px;
+    height: 380px;
+    background:  rgb(255, 251, 8);
+    border: 2px solid  rgb(255, 251, 8);
+}
+
+#container .postbox .postcards a {
+    text-decoration: none;
+}
+
+#container .postbox .postcards a img {
+    width: 100%;
+    height: 280px;
+}
+
+#container .postbox .postcards a .postTittle {
+    height: 80px;
+    font-size: 14px;
+    margin: 4px 0;
+    padding: 0 5px;
+    color: #000;
+}
+
+/*  pagination */
+#container #pagination{
+    width: 100%;
+    background: rgb(1, 17, 4);
+    margin: 30px 0;
+    position: relative;
+    left: 0;
+}
+#container #pagination ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 12%;
+  
+}
+#container #pagination ul li{
+    margin: 0 2px;
+}
+#container #pagination ul li a{
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    background: rgb(255, 251, 8);
+    text-decoration: none;
+    color: #050000;
+    border-radius: 4px;
+}
+#container #pagination ul li a:hover,
+#container #pagination ul .active a{
+    background: #000000;
+    color: rgb(255, 251, 8);
+}
+#container .footer{
+    min-height: 70px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background:black;
+    margin: 30px 0 0 0 ;
+
+}
+#container .footer h2{
+    color: #e2e2e2;
+    font-size: 15px;
+}
+#container .footer h2 a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media only screen and (max-width:1240px){
+    #container .postbox{
+        display: grid;
+        grid-template-columns: repeat(4,200px);
+    }
+}
+
+@media only screen and (max-width:1030px){
+    #container .postbox{
+        display: grid;
+        grid-template-columns: repeat(3,200px);
+    }
+}
